@@ -1,0 +1,132 @@
+.components {
+  position: relative;
+  overflow: hidden;
+  > div {
+    background: #fff;
+    padding: 0.1rem 0.15rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    > .Title {
+      align-items: center;
+      border-bottom: 0.01rem solid #f7f7f7;
+      > span {
+        &.flex-item {
+          font-size: 0.14rem;
+          color: #333;
+          line-height: 0.4rem;
+        }
+        &:last-child {
+          font-size: 0.12rem;
+          color: #333;
+          > em {
+            font-size: 0.12rem;
+            color: #d91e36;
+            font-weight: bold;
+          }
+        }
+        &:only-child {
+          font-size: 0.14rem;
+          color: #333;
+          line-height: 0.4rem;
+        }
+      }
+    }
+  }
+  > .Top {
+    align-items: center;
+    > .Icon {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: relative;
+      overflow: hidden;
+      margin-right: 0.1rem;
+    }
+    > span {
+      &.flex-item {
+        font-size: 0.16rem;
+        color: #333;
+        font-weight: bold;
+        line-height: 0.2rem;
+        > em {
+          font-size: 0.12rem;
+          color: #666;
+          font-weight: normal;
+          display: inline-block;
+          line-height: 0.2rem;
+        }
+      }
+      &:last-child {
+        font-size: 0.12rem;
+        color: #9a9a9a;
+      }
+    }
+  }
+  > .Num {
+    padding-top: 0.05rem;
+    padding-bottom: 0.15rem;
+    > ul {
+      > li {
+        > span {
+          display: block;
+          font-size: 0.12rem;
+          color: #333;
+          line-height: 0.4rem;
+        }
+        > ul {
+          font-size: 0;
+          white-space: nowrap;
+          > li {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 0.1rem;
+            width: 0.2rem;
+            line-height: 0.2rem;
+            border-radius: 100%;
+            text-align: center;
+            color: #fff;
+            background: #da1e36;
+            margin-right: 0.05rem;
+            &.active {
+              background: #1c40c5;
+            }
+          }
+        }
+      }
+    }
+  }
+  > .OrderInfo {
+    > ul {
+      margin-top: 0.15rem;
+      > li {
+        align-items: center;
+        margin-top: 0.05rem;
+        > span {
+          font-size: 0.12rem;
+          color: #666;
+          min-width: 0.6rem;
+          line-height: 0.2rem;
+        }
+        > div {
+          > div {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            > span {
+              display: block;
+              white-space: nowrap;
+              font-size: 0.12rem;
+              color: #666;
+              line-height: 0.2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+}

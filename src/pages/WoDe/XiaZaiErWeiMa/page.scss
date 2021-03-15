@@ -1,0 +1,91 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    > #Base64Canvas {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: -200%;
+    }
+    > .TargetImg {
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: -200%;
+    }
+    > .CanvasImg {
+      position: absolute;
+      z-index: 300;
+      width: 50%;
+      opacity: 0;
+      left: -500%;
+    }
+    > div {
+      z-index: 2;
+      width: 70%;
+      background: #fff;
+      box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.05);
+      border-radius: 0.06rem;
+      padding: 0.15rem;
+      > span {
+        display: block;
+        text-align: center;
+        line-height: 1.5;
+        margin-top: 0.02rem;
+        &:nth-child(1) {
+          font-size: 0.16rem;
+          font-weight: bold;
+        }
+        &:nth-child(2) {
+          font-size: 0.2rem;
+          font-weight: bold;
+          color: #d91d36;
+        }
+        &:nth-child(3) {
+          font-size: 0.12rem;
+          color: #999;
+        }
+      }
+      > .QrCode {
+        border-top: 0.01rem dashed #ccc;
+        margin-top: 0.15rem;
+        padding-bottom: 100%;
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        > div {
+          width: 50%;
+          position: absolute;
+          left: 25%;
+          top: 25%;
+          bottom: 25%;
+          overflow: hidden;
+        }
+      }
+      > .SaveImg {
+        padding: 0 30px;
+        position: relative;
+        overflow: hidden;
+        background: none;
+        box-shadow: none;
+        margin-top: -0.5rem;
+        > a {
+          width: 100%;
+          display: block;
+          font-size: 0.14rem;
+          color: #fff;
+          line-height: 0.4rem;
+          text-align: center;
+          background: #d91d36;
+          border-radius: 0.06rem;
+        }
+      }
+    }
+  }
+}

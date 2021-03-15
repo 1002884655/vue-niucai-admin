@@ -1,0 +1,109 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #f2f2f2;
+    > .Form {
+      background: #fff;
+      > div {
+        align-items: center;
+        padding: 0 0.15rem;
+        border-bottom: 0.01rem solid #f8f8f8;
+        > span {
+          font-size: 0.14rem;
+          min-width: 1rem;
+          margin-right: 0.1rem;
+        }
+        > div {
+          > input {
+            width: 100%;
+            display: block;
+            font-size: 0.14rem;
+            line-height: 0.2rem;
+            padding: 0.1rem 0;
+            text-align: right;
+            background: none;
+          }
+        }
+      }
+    }
+    > .Tips {
+      display: block;
+      padding: 0 0.15rem;
+      font-size: 0.12rem;
+      color: #999;
+      line-height: 0.2rem;
+      margin-top: 0.1rem;
+    }
+    > .Btn {
+      padding: 0 0.15rem;
+      margin-top: 0.2rem;
+      > a {
+        display: block;
+        font-size: 0.14rem;
+        line-height: 0.4rem;
+        background: #d91d36;
+        text-align: center;
+        border-radius: 0.06rem;
+        color: #fff;
+      }
+    }
+    > .QrCodeLayer {
+      width: 100%;
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      > div {
+        width: 80%;
+        border-radius: 0.06rem;
+        background: #fff;
+        padding: 0.1rem 0;
+        > .Top {
+          position: relative;
+          overflow: hidden;
+          > span {
+            display: block;
+            font-size: 0.14rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            line-height: 0.4rem;
+          }
+          > a {
+            display: inline-block;
+            font-size: 0.18rem;
+            position: absolute;
+            z-index: 2;
+            right: 0.15rem;
+            top: 0;
+            line-height: 0.4rem;
+          }
+        }
+        > .QrCode {
+          width: 1.5rem;
+          height: 1.5rem;
+          border: 0.01rem solid #eee;
+          position: relative;
+          overflow: hidden;
+          margin: 0 auto;
+        }
+        > span {
+          display: block;
+          padding: 0 0.15rem;
+          font-size: 0.12rem;
+          line-height: 0.2rem;
+          margin-top: 0.15rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+.Page {
+  .PageContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    > a.flex-h {
+      align-items: center;
+      border-bottom: 0.01rem solid #f7f7f7;
+      padding: 0 0.15rem;
+      > i {
+        font-size: 0.15rem;
+        color: #999;
+        &:first-child {
+          color: #d91d36;
+        }
+      }
+      > span {
+        font-size: 0.1rem;
+        line-height: 0.28rem;
+        color: #d91d36;
+        margin-left: 0.05rem;
+      }
+    }
+    > .flex-item {
+      position: relative;
+      > div {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        > .Content {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          z-index: 2;
+          .Container {
+            position: relative;
+            padding: 0 0.15rem;
+            > ul {
+              position: relative;
+              overflow: visible;
+              > li {
+                background: #fff;
+                border-radius: 0.06rem;
+                position: relative;
+                box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.05);
+                margin-bottom: 0.15rem;
+                &:first-child {
+                  margin-top: 0.15rem;
+                }
+                > .Res {
+                  position: relative;
+                  border-bottom: 0.01rem solid #f7f7f7;
+                  padding: 0.15rem;
+                  > div.Num {
+                    align-items: center;
+                    > .Icon {
+                      width: 0.4rem;
+                      height: 0.4rem;
+                      position: relative;
+                      overflow: hidden;
+                      margin-right: 0.1rem;
+                    }
+                    > span {
+                      width: 0.55rem;
+                      font-size: 0.16rem;
+                      font-weight: bold;
+                      line-height: 0.2rem;
+                      margin-right: 0.1rem;
+                    }
+                    > .flex-item {
+                      > span {
+                        display: block;
+                        font-size: 0.1rem;
+                        line-height: 0.2rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                      }
+                      > ul {
+                        width: 100%;
+                        font-size: 0;
+                        white-space: nowrap;
+                        > li {
+                          display: inline-block;
+                          vertical-align: middle;
+                          font-size: 0.1rem;
+                          color: #fff;
+                          width: 0.2rem;
+                          height: 0.2rem;
+                          line-height: 0.2rem;
+                          border-radius: 100%;
+                          text-align: center;
+                          background: #d91d36;
+                          margin-right: 0.05rem;
+                          &.active {
+                            background: #1b40c5;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  > div.Count {
+                    align-items: center;
+                    margin-top: 0.05rem;
+                    > span {
+                      font-size: 0.1rem;
+                      color: #999;
+                      line-height: 0.2rem;
+                      white-space: nowrap;
+                      > em {
+                        color: #d91d36;
+                        font-size: 0.12rem;
+                        font-weight: bold;
+                      }
+                      &:first-child {
+                        margin-left: 0.5rem;
+                        font-size: 0.12rem;
+                        color: #333;
+                        font-weight: bold;
+                      }
+                      &:last-child {
+                        margin-left: 0.25rem;
+                      }
+                    }
+                  }
+                }
+                > .Time {
+                  align-items: center;
+                  padding: 0.1rem 0.15rem;
+                  > span {
+                    font-size: 0.12rem;
+                    color: #666;
+                    line-height: 0.2rem;
+                    &.flex-item {
+                      margin-left: 0.1rem;
+                      margin-right: 0.1rem;
+                      white-space: nowrap;
+                      overflow: hidden;
+                      position: relative;
+                      text-overflow: ellipsis;
+                      &:first-child {
+                        margin-left: 0;
+                      }
+                    }
+                  }
+                  > a {
+                    font-size: 0.12rem;
+                    width: 0.8rem;
+                    border: 0.01rem solid #d91d36;
+                    border-radius: 0.04rem;
+                    line-height: 0.28rem;
+                    text-align: center;
+                    color: #d91d36;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

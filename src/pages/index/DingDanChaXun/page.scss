@@ -1,0 +1,92 @@
+.Page {
+  background: #f2f2f2;
+  .Content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    .Container {
+      position: relative;
+      padding: 0 0.15rem;
+      > ul {
+        position: relative;
+        overflow: visible;
+        > li {
+          background: #fff;
+          border-radius: 0.06rem;
+          position: relative;
+          box-shadow: 0 0 0.02rem 0.02rem rgba(0, 0, 0, 0.05);
+          margin-bottom: 0.15rem;
+          padding: 0.15rem;
+          &:first-child {
+            margin-top: 0.15rem;
+          }
+          > .flex-h {
+            align-items: center;
+            margin-bottom: 0.12rem;
+            > div.flex-item {
+              margin-right: 0.1rem;
+              > div {
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                > span {
+                  font-size: 0.16rem;
+                  font-weight: bold;
+                  line-height: 0.2rem;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: block;
+                  > em {
+                    font-size: 0.12rem;
+                    color: #666;
+                    line-height: 0.2rem;
+                    display: inline-block;
+                    margin-left: 0.05rem;
+                    font-weight: normal;
+                  }
+                }
+              }
+            }
+            > span {
+              font-size: 0.12rem;
+              line-height: 0.2rem;
+              color: #333;
+              &.Red {
+                color: #d91e36;
+              }
+              &.Grey {
+                color: #666;
+              }
+              &:last-child {
+                margin-left: 0.1rem;
+              }
+              > em {
+                color: #d91e36;
+                font-weight: bold;
+              }
+            }
+          }
+          > span {
+            font-size: 0.12rem;
+            color: #666;
+            line-height: 0.2rem;
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            margin-top: 0.02rem;
+            > em {
+              font-size: 0.12rem;
+              color: #666;
+              display: inline-block;
+              margin-right: 0.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

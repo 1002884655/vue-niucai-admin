@@ -1,0 +1,139 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #f2f2f2;
+  .Container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    > .Top {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 41.5%;
+      background-image: linear-gradient(#f2372e, #fe6a3a);
+      > .Title {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        > span {
+          display: block;
+          font-size: 0.16rem;
+          color: #fff;
+          text-align: center;
+          line-height: 0.4rem;
+          position: relative;
+          z-index: 1;
+        }
+        > a {
+          display: inline-block;
+          position: absolute;
+          right: 0.15rem;
+          top: 0.05rem;
+          font-size: 0.26rem;
+          color: #fff;
+          line-height: 0.3rem;
+          z-index: 2;
+        }
+      }
+      > .Info {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0.2rem;
+        z-index: 2;
+        > .Icon {
+          width: 0.6rem;
+          height: 0.6rem;
+          border-radius: 100%;
+          position: relative;
+          overflow: hidden;
+          border-radius: 100%;
+          border: 0.01rem solid #fff;
+          margin-right: 0.1rem;
+          margin-left: 0.15rem;
+          background: #ccc;
+        }
+        > .flex-item {
+          > .flex-h {
+            align-items: center;
+            > .flex-item {
+              > div {
+                width: 100%;
+                > span {
+                  display: block;
+                  font-size: 0.16rem;
+                  color: #fff;
+                  line-height: 0.2rem;
+                  > em {
+                    font-size: 0.12rem;
+                    color: #fff;
+                    line-height: 0.2rem;
+                  }
+                }
+              }
+            }
+            > span {
+              font-size: 0.12rem;
+              color: #fff;
+              line-height: 0.3rem;
+            }
+            > em {
+              font-size: 0.12rem;
+              color: #fff;
+              line-height: 0.3rem;
+              font-weight: bold;
+              padding-left: 0.05rem;
+            }
+            > i {
+              font-size: 0.12rem;
+              color: #fff;
+              line-height: 0.3rem;
+              margin-right: 0.15rem;
+            }
+          }
+          > .Desc {
+            > span {
+              display: block;
+              font-size: 0.1rem;
+              white-space: nowrap;
+              line-height: 0.16rem;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    > ul {
+      > li {
+        background: #fff;
+        margin-top: 0.1rem;
+        padding: 0.15rem;
+        position: relative;
+        align-items: center;
+        &:first-child {
+          margin-top: 0;
+        }
+        > .Icon {
+          width: 0.2rem;
+          height: 0.2rem;
+          position: relative;
+          overflow: hidden;
+          margin-right: 0.1rem;
+        }
+        > span {
+          font-size: 0.16rem;
+          line-height: 0.2rem;
+        }
+        > i {
+          font-size: 0.2rem;
+          color: #dadada;
+        }
+      }
+    }
+  }
+}

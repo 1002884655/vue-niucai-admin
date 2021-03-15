@@ -1,0 +1,209 @@
+.components {
+  position: relative;
+  overflow: hidden;
+  > div {
+    background: #fff;
+    padding: 0.1rem 0.15rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.1rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    > .Title {
+      align-items: center;
+      border-bottom: 0.01rem solid #f7f7f7;
+      > span {
+        &.flex-item {
+          font-size: 0.14rem;
+          color: #333;
+          line-height: 0.4rem;
+        }
+        &:last-child {
+          font-size: 0.12rem;
+          color: #333;
+          > em {
+            font-size: 0.12rem;
+            color: #d91e36;
+            font-weight: bold;
+          }
+        }
+        &:only-child {
+          font-size: 0.14rem;
+          color: #333;
+          line-height: 0.4rem;
+        }
+      }
+    }
+  }
+  > .Top {
+    align-items: center;
+    > .Icon {
+      width: 0.4rem;
+      height: 0.4rem;
+      position: relative;
+      overflow: hidden;
+      margin-right: 0.1rem;
+    }
+    > span {
+      &.flex-item {
+        font-size: 0.16rem;
+        color: #333;
+        font-weight: bold;
+        line-height: 0.2rem;
+        > em {
+          font-size: 0.12rem;
+          color: #666;
+          font-weight: normal;
+          display: inline-block;
+          line-height: 0.2rem;
+        }
+      }
+    }
+  }
+  > .Status {
+    padding: 0.15rem;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 0;
+    padding-top: 0;
+    > ul {
+      border-top: 0.01rem solid #f7f7f7;
+      padding-top: 0.15rem;
+      > li {
+        position: relative;
+        overflow: hidden;
+        &::after {
+          content: "";
+          width: 0.01rem;
+          height: 60%;
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 20%;
+          background: #e8e8e8;
+        }
+        &:first-child {
+          &::after {
+            display: none;
+          }
+        }
+        &:last-child {
+          > span {
+            &:first-child {
+              color: #333;
+            }
+          }
+        }
+        > span {
+          display: block;
+          text-align: center;
+          font-size: 0.12rem;
+          color: #9a9a9a;
+          line-height: 0.2rem;
+          &:first-child {
+            font-size: 0.16rem;
+            font-weight: bold;
+            color: #d91e36;
+            margin-bottom: 0.05rem;
+          }
+        }
+      }
+    }
+  }
+  > .Num {
+    padding-top: 0.05rem;
+    padding-bottom: 0.15rem;
+    > ul {
+      > li {
+        border-top: 0.01rem solid #f7f7f7;
+        padding: 0.15rem 0;
+        &:first-child {
+          border-top: none;
+        }
+        > .Time {
+          font-size: 0;
+          white-space: nowrap;
+          > span {
+            display: inline-block;
+            font-size: 0.12rem;
+            color: #666;
+            line-height: 0.2rem;
+            vertical-align: middle;
+            margin-left: 0.1rem;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
+        }
+        > .flex-h {
+          align-items: center;
+          margin-top: 0.1rem;
+          > .flex-item {
+            position: relative;
+            margin-right: 0.1rem;
+            > div {
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+              > span {
+                display: block;
+                white-space: nowrap;
+                font-size: 0.14rem;
+                color: #333;
+                line-height: 0.2rem;
+                > em {
+                  color: #d91e36;
+                  font-size: 0.14rem;
+                }
+              }
+            }
+          }
+          > span {
+            font-size: 0;
+            white-space: nowrap;
+            > em {
+              font-size: 0.12rem;
+              line-height: 0.2rem;
+              display: inline-block;
+              vertical-align: middle;
+              margin-left: 0.05rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  > .OrderInfo {
+    > ul {
+      margin-top: 0.15rem;
+      > li {
+        align-items: center;
+        margin-top: 0.05rem;
+        > span {
+          font-size: 0.12rem;
+          color: #666;
+          min-width: 0.6rem;
+          line-height: 0.2rem;
+        }
+        > div {
+          > div {
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            > span {
+              display: block;
+              white-space: nowrap;
+              font-size: 0.12rem;
+              color: #666;
+              line-height: 0.2rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+}

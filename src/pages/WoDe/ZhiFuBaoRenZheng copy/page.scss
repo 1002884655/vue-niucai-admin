@@ -1,0 +1,131 @@
+.Page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #f2f2f2;
+  .Container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    > .Content {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 0.2rem;
+      min-height: 100%;
+      > .AliShouQuan {
+        font-size: 0.14rem;
+        line-height: 0.4rem;
+        width: 80%;
+        text-align: center;
+        background: #d91e36;
+        color: #fff;
+        border-radius: 0.06rem;
+      }
+      > div {
+        padding: 0 0.15rem;
+        background: #fff;
+        margin-top: 0.1rem;
+        position: relative;
+        overflow: hidden;
+        &:first-child {
+          margin-top: 0;
+        }
+        > .Line {
+          align-items: center;
+          padding: 0.1rem 0;
+          border-top: 0.01rem solid #f7f7f7;
+          &:first-child {
+            border-top: none;
+          }
+          > em {
+            font-size: 0.12rem;
+            color: #d91e36;
+          }
+          > span {
+            font-size: 0.15rem;
+            line-height: 0.3rem;
+            min-width: 0.9rem;
+          }
+          > div.flex-item {
+            > div {
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+              > input {
+                width: 100%;
+                font-size: 0.12rem;
+                line-height: 0.2rem;
+              }
+              > span {
+                display: block;
+                font-size: 0.12rem;
+                text-align: right;
+              }
+            }
+          }
+          > i {
+            font-size: 0.2rem;
+            color: #999;
+            margin-left: 0.1rem;
+          }
+        }
+        &.PhotoList {
+          padding-top: 0.15rem;
+          padding-bottom: 0.15rem;
+          padding-left: 0;
+          > div {
+            position: relative;
+            border-left: 0.01rem solid #f7f7f7;
+            padding-left: 0.15rem;
+            &:first-child {
+              border-left: none;
+            }
+            > ul {
+              font-size: 0;
+              > li {
+                display: inline-block;
+                vertical-align: middle;
+                position: relative;
+                margin-left: 0.1rem;
+                margin-bottom: 0.1rem;
+                width: 0.7rem;
+                &:nth-child(2n + 1) {
+                  margin-left: 0;
+                }
+                > a {
+                  width: 100%;
+                  display: block;
+                  padding-bottom: 100%;
+                  position: relative;
+                  overflow: hidden;
+                  box-sizing: border-box;
+                  border: 0.01rem dashed #ccc;
+                  > i {
+                    font-size: 0.2rem;
+                    color: #999;
+                  }
+                }
+                > div {
+                  width: 100%;
+                  padding-bottom: 100%;
+                  position: relative;
+                  overflow: hidden;
+                  background: #ccc;
+                }
+                > span {
+                  font-size: 0.12rem;
+                  display: block;
+                  text-align: center;
+                  line-height: 0.2rem;
+                  height: 0.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

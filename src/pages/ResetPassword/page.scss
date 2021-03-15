@@ -1,0 +1,114 @@
+.components.MainPageContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #f8f8f8;
+  > .MainHeaderPadding {
+    position: relative;
+    overflow: hidden;
+    background: #d91d36;
+  }
+  > .MainHeader {
+    position: relative;
+    overflow: hidden;
+    background: #d91d36;
+    > .MainTitle {
+      width: 100%;
+      display: block;
+      text-align: center;
+      height: 0.4rem;
+      white-space: nowrap;
+      position: relative;
+      z-index: 1;
+      > * {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 0.4rem;
+        font-size: 0.17rem;
+        color: #fff;
+      }
+    }
+    > a {
+      display: inline-block;
+      position: absolute;
+      z-index: 2;
+      color: #fff;
+      &.MainBack {
+        font-size: 0.18rem;
+        line-height: 0.4rem;
+        top: 0;
+        left: 0.15rem;
+      }
+    }
+  }
+  > .MainBody {
+    position: relative;
+    overflow: hidden;
+    > div {
+      position: absolute;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      > .Form {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        > .flex-h {
+          align-items: center;
+          background: #fff;
+          padding: 0 0.15rem;
+          border-bottom: 0.01rem solid #f8f8f8;
+          > span {
+            min-width: 0.8rem;
+            font-size: 0.14rem;
+            color: #333;
+            line-height: 0.44rem;
+          }
+          > div {
+            position: relative;
+            overflow: hidden;
+            > input {
+              width: 100%;
+              display: block;
+              font-size: 0.14rem;
+              line-height: 0.4rem;
+              border: none;
+              color: #333;
+            }
+          }
+          > a {
+            font-size: 0.14rem;
+            color: #fff;
+            background: #ccc;
+            line-height: 0.3rem;
+            padding: 0 0.15rem;
+            border-radius: 0.04rem;
+            &.active {
+              background: #d91d36;
+            }
+          }
+        }
+        > .Btn {
+          padding: 0 0.15rem;
+          position: relative;
+          overflow: hidden;
+          margin-top: 0.15rem;
+          > a {
+            display: block;
+            font-size: 0.16rem;
+            color: #fff;
+            background: #d91d36;
+            text-align: center;
+            line-height: 0.4rem;
+            border-radius: 0.06rem;
+          }
+        }
+      }
+    }
+  }
+}

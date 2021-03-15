@@ -1,0 +1,142 @@
+.Page {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  > .TopContainer {
+    width: 100%;
+    padding-bottom: 46.4%;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to top right, #fb5f59, #fd9757);
+    > span {
+      width: 100%;
+      font-size: 0.22rem;
+      color: #fff;
+      line-height: 0.3rem;
+      text-indent: 0.35rem;
+      font-weight: bold;
+    }
+  }
+  > span {
+    display: block;
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    white-space: nowrap;
+    padding-left: 0.15rem;
+    margin-top: 0.15rem;
+    > a {
+      font-size: 0.14rem;
+      color: #ff5200;
+      line-height: 0.2rem;
+    }
+  }
+  > .Form {
+    padding: 0 0.15rem;
+    margin-top: 0.2rem;
+    > li {
+      padding: 0.15rem 0;
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+      border-bottom: 0.01rem solid #f7f7f7;
+      > * {
+        margin-left: 0.05rem;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      > i {
+        font-size: 0.18rem;
+        line-height: 0.3rem;
+        color: #ff5200;
+      }
+      > div {
+        > div {
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          > input {
+            width: 100%;
+            display: block;
+            font-size: 0.14rem;
+            line-height: 0.2rem;
+          }
+        }
+      }
+      > a {
+        font-size: 0.14rem;
+        color: #ff5200;
+      }
+      > span {
+        font-size: 0.14rem;
+        color: #ccc;
+      }
+    }
+  }
+  > .Btn {
+    padding: 0 0.15rem;
+    margin-top: 0.5rem;
+    > a {
+      display: block;
+      font-size: 0.16rem;
+      color: #fff;
+      background: #ccc;
+      line-height: 0.42rem;
+      border-radius: 0.06rem;
+      text-align: center;
+      &.active {
+        background: #ff5200;
+      }
+    }
+  }
+  > .OtherSignIn {
+    margin-top: 0.4rem;
+    padding: 0 0.77rem;
+    > span {
+      display: block;
+      text-align: center;
+      position: relative;
+      text-align: center;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 0.01rem;
+        background: #f7f7f7;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        position: absolute;
+        z-index: 1;
+      }
+      > span {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        font-size: 0.12rem;
+        color: #666;
+        line-height: 0.2rem;
+        background: #fff;
+        padding: 0 0.1rem;
+      }
+    }
+    > div {
+      margin-top: 0.2rem;
+      font-size: 0;
+      white-space: nowrap;
+      text-align: center;
+      padding-bottom: 0.4rem;
+      > a {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 0.4rem;
+        margin-left: 0.28rem;
+        color: #32b508;
+        &:first-child {
+          margin-left: 0;
+          color: #09a7e4;
+        }
+      }
+    }
+  }
+}
